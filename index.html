@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KAE-NTT Mataram | Kerukunan Anak Ende</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- DARK MODE TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="toggle-icon sun">☀</span>
+      <span class="toggle-icon moon">☽</span>
+    </button>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <nav>
+        <a href="#home" class="logo">KAE<span>-NTT</span></a>
+        <ul class="nav-links">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#sejarah">Sejarah</a></li>
+          <li><a href="#ketua">Kepemimpinan</a></li>
+          <li><a href="#struktur">Struktur</a></li>
+          <li><a href="#program">Bidang</a></li>
+          <li><a href="#countdown">Agenda</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger">&#9776;</button>
+      </nav>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-menu" id="closeMenu">&#10005;</button>
+      <ul>
+        <li><a href="#home" class="mobile-link">Beranda</a></li>
+        <li><a href="#sejarah" class="mobile-link">Sejarah</a></li>
+        <li><a href="#ketua" class="mobile-link">Kepemimpinan</a></li>
+        <li><a href="#struktur" class="mobile-link">Struktur</a></li>
+        <li><a href="#program" class="mobile-link">Bidang</a></li>
+        <li><a href="#countdown" class="mobile-link">Agenda</a></li>
+        <li><a href="#galeri" class="mobile-link">Galeri</a></li>
+        <li><a href="#kontak" class="mobile-link">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="hero-tagline">Kerukunan Anak Ende — NTT Mataram</p>
+        <h1>Bersatu.<br>Berkarya.<br>Bermartabat.</h1>
+        <p class="hero-sub">Organisasi paguyuban mahasiswa Ende di Kota Mataram<br>sejak tahun 2003.</p>
+        <div class="hero-actions">
+          <a href="#sejarah" class="btn btn-primary">Lihat Sejarah</a>
+          <a href="#kontak" class="btn btn-outline">Hubungi Kami</a>
+        </div>
+        <div class="hero-motto">
+          <span>"KAE, MBOKA KITA PAWAKE JURU KITA PATUKU"</span>
+        </div>
+      </div>
+      <div class="hero-deco">
+        <div class="deco-circle c1"></div>
+        <div class="deco-circle c2"></div>
+        <div class="deco-line"></div>
+      </div>
+    </section>
+
+    <!-- SEJARAH -->
+    <section id="sejarah" class="sejarah-section">
+      <div class="section-header reveal">
+        <span class="section-label">Tentang Kami</span>
+        <h2>Sejarah Organisasi</h2>
+      </div>
+
+      <div class="sejarah-grid">
+        <div class="sejarah-card reveal">
+          <div class="card-year">2001</div>
+          <h3>Awal Gagasan</h3>
+          <p>Hasrat para mahasiswa Ende di Mataram untuk membentuk wadah paguyuban pertama kali muncul, namun belum terwujud karena minimnya dukungan dan antusias dari berbagai pihak.</p>
+        </div>
+        <div class="sejarah-card reveal">
+          <div class="card-year">2003</div>
+          <h3>Berdirinya KAE</h3>
+          <p>Dipelopori oleh lima senior — Abang Bele, Abang Cen, Abang Din, Abang Papi, dan Abang Arjun — KAE resmi terbentuk dengan Ketua Pertama Subhan Maulana (Abang Bele) di "Istana CAMP".</p>
+        </div>
+        <div class="sejarah-card reveal">
+          <div class="card-year">2010</div>
+          <h3>Formalisasi Organisasi</h3>
+          <p>Pada masa Ketum Andika Mahmud, kepemimpinan sudah formal dengan memiliki Konstitusi (AD/ART) sebagai landasan hukum organisasi.</p>
+        </div>
+        <div class="sejarah-card reveal">
+          <div class="card-year">2016</div>
+          <h3>OSPOR Resmi</h3>
+          <p>Pada masa Ketum Fhatur Rahman Ola, pengkaderan anggota baru memiliki legalitas resmi yang disebut Orientasi Pengenalan Organisasi (OSPOR).</p>
+        </div>
+      </div>
+
+      <div class="makna-kae reveal">
+        <h3>Makna Kata KAE</h3>
+        <div class="makna-grid">
+          <div class="makna-item">
+            <span class="makna-huruf">K</span>
+            <div>
+              <strong>Kerukunan</strong>
+              <p>Agar mahasiswa/wi bisa hidup secara harmonis dalam bingkai kebersamaan.</p>
+            </div>
+          </div>
+          <div class="makna-item">
+            <span class="makna-huruf">A</span>
+            <div>
+              <strong>Anak</strong>
+              <p>Golongan generasi muda yang menuntut ilmu di perguruan tinggi maupun sekolah.</p>
+            </div>
+          </div>
+          <div class="makna-item">
+            <span class="makna-huruf">E</span>
+            <div>
+              <strong>Ende</strong>
+              <p>Nama tempat asal para generasi muda yang menuntut ilmu di Kota Mataram.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEPEMIMPINAN SLIDER -->
+    <section id="ketua" class="ketua-section">
+      <div class="section-header reveal">
+        <span class="section-label">Historis</span>
+        <h2>Sejarah Kepemimpinan</h2>
+        <p>Daftar ketua organisasi dari tahun ke tahun</p>
+      </div>
+
+      <div class="slider-wrapper reveal">
+        <button class="slider-btn prev" id="prevBtn">&#8592;</button>
+        <div class="ketua-slider" id="ketuaSlider">
+          <div class="ketua-card"><span class="ketua-period">2003–2005</span><h3>Subhan Maulana</h3><p>Abang Bele</p><span class="ketua-badge">Pendiri</span></div>
+          <div class="ketua-card"><span class="ketua-period">2005–2006</span><h3>Ibrahim Umar BA</h3><p>Abang Papi</p></div>
+          <div class="ketua-card"><span class="ketua-period">2006–2007</span><h3>Zulham Abidin MB</h3><p>Abang Din</p></div>
+          <div class="ketua-card"><span class="ketua-period">2007–2009</span><h3>Syahdun Ramadhan</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2009–2010</span><h3>Ahmad Ramli</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2010–2011</span><h3>Andika Mahmud</h3><p>&nbsp;</p><span class="ketua-badge">Konstitusi AD/ART</span></div>
+          <div class="ketua-card"><span class="ketua-period">2011–2012</span><h3>Jumadin M. Nasir</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2012–2013</span><h3>Hasan M Saleh</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2013–2014</span><h3>Abdullah Abi</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2014–2015</span><h3>Arif Luwan</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2015–2016</span><h3>Ma'sum Yahya</h3><p>&nbsp;</p><span class="ketua-badge">Jargon Salam KAE</span></div>
+          <div class="ketua-card"><span class="ketua-period">2016–2017</span><h3>Fhatur Rahman Ola</h3><p>&nbsp;</p><span class="ketua-badge">OSPOR Resmi</span></div>
+          <div class="ketua-card"><span class="ketua-period">2017–2018</span><h3>Nadiran Samin</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2018–2019</span><h3>Khairullah Usman</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2019–2020</span><h3>Idhan Rizal A.K</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2020–2021</span><h3>Muhammad Fathurrahman</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2021–2022</span><h3>Abdul Huda Syaifullah</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2022–2023</span><h3>Husnul Yaqin</h3><p>&nbsp;</p></div>
+          <div class="ketua-card"><span class="ketua-period">2023–2024</span><h3>Muhamad Syaim</h3><p>&nbsp;</p></div>
+          <div class="ketua-card active"><span class="ketua-period">2025–2026</span><h3>Nizar Rifki Zulmi</h3><p>&nbsp;</p><span class="ketua-badge current">Ketua Aktif</span></div>
+        </div>
+        <button class="slider-btn next" id="nextBtn">&#8594;</button>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- STRUKTUR -->
+    <section id="struktur" class="struktur-section">
+      <div class="section-header reveal">
+        <span class="section-label">Organisasi</span>
+        <h2>Struktur KAE-NTT Mataram</h2>
+      </div>
+      <div class="struktur-tree reveal">
+        <div class="s-node top">
+          <div class="s-box mpk">
+            <h3>MPK</h3>
+            <p>Majelis Pembina Kerukunan</p>
+          </div>
+        </div>
+        <div class="s-connector"></div>
+        <div class="s-node mid">
+          <div class="s-box dpa">
+            <h3>DPA</h3>
+            <p>Dewan Pertimbangan Anggota</p>
+          </div>
+        </div>
+        <div class="s-connector"></div>
+        <div class="s-node bottom">
+          <div class="s-box ph">
+            <h3>Pengurus Harian</h3>
+            <p>Ketua · Sekretaris · Bendahara</p>
+          </div>
+        </div>
+        <div class="s-connector-wide"></div>
+        <div class="s-bidang-row">
+          <div class="s-box bid">Olahraga</div>
+          <div class="s-box bid">Kerohanian</div>
+          <div class="s-box bid">Seni &amp; Budaya</div>
+          <div class="s-box bid">Pengkaderan</div>
+          <div class="s-box bid">Medikes</div>
+          <div class="s-box bid">Humas</div>
+          <div class="s-box bid">Perbend. Perempuan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIDANG -->
+    <section id="program" class="program-section">
+      <div class="section-header reveal">
+        <span class="section-label">Kepengurusan</span>
+        <h2>Bidang Kepengurusan</h2>
+      </div>
+      <div class="program-grid">
+        <div class="program-card reveal">
+          <div class="program-icon">⚽</div>
+          <h3>Olahraga</h3>
+          <p>Mengelola dan mengembangkan kegiatan olahraga seluruh anggota KAE.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">🕌</div>
+          <h3>Kerohanian</h3>
+          <p>Mengembangkan kegiatan keagamaan dan spiritual anggota organisasi.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">🎭</div>
+          <h3>Seni &amp; Budaya</h3>
+          <p>Melestarikan dan mempromosikan kekayaan seni budaya Ende.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">🎓</div>
+          <h3>Pengkaderan</h3>
+          <p>Mengurus proses kaderisasi anggota baru melalui OSPOR terstruktur.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">🏥</div>
+          <h3>Medikes</h3>
+          <p>Bidang kesehatan yang mendukung kesejahteraan anggota organisasi.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">📣</div>
+          <h3>Humas</h3>
+          <p>Mengelola hubungan eksternal dengan masyarakat dan lembaga lain.</p>
+        </div>
+        <div class="program-card reveal">
+          <div class="program-icon">👩‍💼</div>
+          <h3>Pemberdayaan Perempuan</h3>
+          <p>Mendukung pengembangan kapasitas dan kesetaraan anggota perempuan.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown" class="countdown-section">
+      <div class="section-header reveal">
+        <span class="section-label">Agenda</span>
+        <h2>Countdown Kegiatan</h2>
+      </div>
+      <div class="countdown-wrapper reveal">
+        <div class="countdown-event-info">
+          <h3 id="eventName">Milad KAE ke-22</h3>
+          <p id="eventDesc">Peringatan ulang tahun organisasi KAE-NTT Mataram</p>
+          <div class="event-date-display" id="eventDateDisplay">Tanggal: —</div>
+          <div class="event-controls">
+            <label>Nama Acara</label>
+            <input type="text" id="inputEventName" placeholder="Nama acara..." value="Milad KAE ke-22">
+            <label>Deskripsi</label>
+            <input type="text" id="inputEventDesc" placeholder="Deskripsi acara...">
+            <label>Tanggal Acara</label>
+            <input type="datetime-local" id="inputEventDate">
+            <button class="btn btn-primary" onclick="setCountdown()">Set Countdown</button>
+          </div>
+        </div>
+        <div class="countdown-display">
+          <div class="countdown-box">
+            <span id="cdDays">00</span>
+            <label>Hari</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box">
+            <span id="cdHours">00</span>
+            <label>Jam</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box">
+            <span id="cdMinutes">00</span>
+            <label>Menit</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box">
+            <span id="cdSeconds">00</span>
+            <label>Detik</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="galeri-section">
+      <div class="section-header reveal">
+        <span class="section-label">Dokumentasi</span>
+        <h2>Galeri Kegiatan</h2>
+      </div>
+      <div class="galeri-grid reveal">
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/bg.jpeg">
+          <img src="img/bg.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')">
+          <div class="galeri-overlay"><span>Lihat</span></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/11.jpeg">
+          <img src="img/11.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')">
+          <div class="galeri-overlay"><span>Lihat</span></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/13.jpeg">
+          <img src="img/13.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')">
+          <div class="galeri-overlay"><span>Lihat</span></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/12.jpeg">
+          <img src="img/12.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')">
+          <div class="galeri-overlay"><span>Lihat</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close">&#10005;</button>
+      <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="kontak-section">
+      <div class="section-header reveal">
+        <span class="section-label">Hubungi</span>
+        <h2>Kontak Kami</h2>
+      </div>
+      <div class="kontak-wrapper">
+        <!-- FORM KONTAK FUNGSIONAL -->
+        <div class="kontak-form reveal">
+          <h3>Kirim Pesan</h3>
+          <div id="formSuccess" class="form-success" style="display:none;">
+            <span>✓</span> Pesan berhasil dikirim! Kami akan segera menghubungi Anda.
+          </div>
+          <div id="formError" class="form-error" style="display:none;">
+            <span>✗</span> Gagal mengirim pesan. Silakan coba lagi atau hubungi langsung.
+          </div>
+          <form id="kontakForm" novalidate>
+            <div class="form-group">
+              <label for="nama">Nama Lengkap</label>
+              <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+              <span class="field-error" id="namaError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+              <span class="field-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subjek">Subjek</label>
+              <input type="text" id="subjek" name="subjek" placeholder="Perihal pesan Anda">
+            </div>
+            <div class="form-group">
+              <label for="pesan">Pesan</label>
+              <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+              <span class="field-error" id="pesanError"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span id="btnText">Kirim Pesan</span>
+              <span id="btnLoading" style="display:none;">Mengirim...</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- INFO KONTAK -->
+        <div class="kontak-info reveal">
+          <h3>Informasi Kontak</h3>
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong>Alamat</strong>
+                <p>Kota Mataram, Nusa Tenggara Barat</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong>Telepon</strong>
+                <p>+62 822-3592-3899</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">📧</div>
+              <div>
+                <strong>Email</strong>
+                <p>anaulfairah4@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="jargon-box">
+            <p class="jargon-text">"SALAM KAE SALAM KEBERSAMAAN"</p>
+            <span class="jargon-credit">— Dipopulerkan oleh Ketum Ma'sum Yahya</span>
+          </div>
+          <div class="sosial-links">
+            <a href="#" class="sosial-btn" title="Website">🌐</a>
+            <a href="#" class="sosial-btn" title="Instagram">📸</a>
+            <a href="#" class="sosial-btn" title="YouTube">▶️</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">KAE<span>-NTT</span></div>
+        <p>Kerukunan Anak Ende – NTT Mataram</p>
+        <p class="footer-copy">© 2026 KAE-NTT Mataram. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
