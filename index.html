@@ -206,7 +206,7 @@
       </div>
     </section>
 
-    <!-- BIDANG -->
+   <!-- BIDANG -->
     <section id="program" class="program-section">
       <div class="section-header reveal">
         <span class="section-label">Kepengurusan</span>
@@ -215,38 +215,130 @@
       <div class="program-grid">
         <div class="program-card reveal">
           <div class="program-icon">⚽</div>
-          <h3>Olahraga</h3>
+          <h3>Olahraga & kesehatan</h3>
           <p>Mengelola dan mengembangkan kegiatan olahraga seluruh anggota KAE.</p>
+          <h4>DPA: M. Selamet Hidayat</h4>
+          <h4>KABID: M. Salehudin</h4>
+          <h4>SEKBID: Danu Marsyal Billal</h4>
         </div>
         <div class="program-card reveal">
           <div class="program-icon">🕌</div>
           <h3>Kerohanian</h3>
           <p>Mengembangkan kegiatan keagamaan dan spiritual anggota organisasi.</p>
+          <h4>DPA: Mazliani Sahidin</h4>
+          <h4>•KABID: Dini Kurniawati</h4>
+          <h4>SEKBID: Aditia Sugandi</h4>
         </div>
         <div class="program-card reveal">
           <div class="program-icon">🎭</div>
           <h3>Seni &amp; Budaya</h3>
           <p>Melestarikan dan mempromosikan kekayaan seni budaya Ende.</p>
+          <h4>DPA: M. Zulfar Saputra</h4>
+          <h4>KABID: Siti Marsidah Pua</h4>
+          <h4>SEKBID: Siti Aprilia maysara</h4>
         </div>
         <div class="program-card reveal">
           <div class="program-icon">🎓</div>
-          <h3>Pengkaderan</h3>
+          <h3>Pengkaderan & Pengembangan Intelektual</h3>
           <p>Mengurus proses kaderisasi anggota baru melalui OSPOR terstruktur.</p>
+          <h4>DPA: Mardianty Anwar</h4>
+          <h4>KABID: Mizan Qhalby Dahlan</h4>
+          <h4>SEKBID: Azafrah Nurma</h4>
         </div>
         <div class="program-card reveal">
-          <div class="program-icon">🏥</div>
+          <div class="program-icon">📸</div>
           <h3>Medikes</h3>
-          <p>Bidang kesehatan yang mendukung kesejahteraan anggota organisasi.</p>
+          <p>Bidang Media dan kesektariatan yang menjalankan roda media sosial KAE NTT-Mataram dan menjaga inventaris</p>
+          <h4>DPA: M. Khairul Fatham</h4>
+          <h4>KABID: Ardiansyah Adiputra</h4>
+          <h4>SEKBID: Rifqy Habib Rahman Suwety</h4>
         </div>
         <div class="program-card reveal">
           <div class="program-icon">📣</div>
           <h3>Humas</h3>
           <p>Mengelola hubungan eksternal dengan masyarakat dan lembaga lain.</p>
+          <h4>DPA: Fantiana Malo</h4>
+          <h4>KABID: Muhamad Fauzi</h4>
+          <h4>SEKBID: Muhammad Al-Muqsit H</h4>
         </div>
         <div class="program-card reveal">
           <div class="program-icon">👩‍💼</div>
           <h3>Pemberdayaan Perempuan</h3>
           <p>Mendukung pengembangan kapasitas dan kesetaraan anggota perempuan.</p>
+          <h4>DPA: Mira Noviyanti</h4>
+          <h4>KABID: Cici Ramdiyatul F</h4>
+          <h4>SEKBID: Syafikah</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section id="countdown" class="countdown-section">
+      <div class="section-header reveal">
+        <span class="section-label">Agenda</span>
+        <h2>Countdown Kegiatan</h2>
+      </div>
+      <div class="countdown-wrapper reveal">
+        <div class="countdown-event-info">
+          <h3 id="eventName">Milad KAE ke-22</h3>
+          <p id="eventDesc">Peringatan ulang tahun organisasi KAE-NTT Mataram</p>
+          <div class="event-date-display" id="eventDateDisplay">Tanggal: —</div>
+          <div class="event-controls">
+            <label>Nama Acara</label>
+            <input type="text" id="inputEventName" placeholder="Nama acara..." value="Milad KAE ke-22" />
+            <label>Deskripsi</label>
+            <input type="text" id="inputEventDesc" placeholder="Deskripsi acara..." />
+            <label>Tanggal Acara</label>
+            <input type="datetime-local" id="inputEventDate" />
+            <button class="btn btn-primary" onclick="setCountdown()">Set Countdown</button>
+          </div>
+        </div>
+        <div class="countdown-display">
+          <div class="countdown-box">
+            <span id="cdDays">00</span>
+            <label>Hari</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box">
+            <span id="cdHours">00</span>
+            <label>Jam</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box">
+            <span id="cdMinutes">00</span>
+            <label>Menit</label>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-box">
+            <span id="cdSeconds">00</span>
+            <label>Detik</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="galeri-section">
+      <div class="section-header reveal">
+        <span class="section-label">Dokumentasi</span>
+        <h2>Galeri Kegiatan</h2>
+      </div>
+      <div class="galeri-grid reveal">
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/bg.jpeg">
+          <img src="img/bg.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="galeri-overlay"><span>Lihat</span></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/11.jpeg">
+          <img src="img/11.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="galeri-overlay"><span>Lihat</span></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/13.jpeg">
+          <img src="img/13.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="galeri-overlay"><span>Lihat</span></div>
+        </div>
+        <div class="galeri-item" onclick="openLightbox(this)" data-src="img/12.jpeg">
+          <img src="img/12.jpeg" alt="Kegiatan KAE" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="galeri-overlay"><span>Lihat</span></div>
         </div>
       </div>
     </section>
